@@ -47,14 +47,73 @@ body{
                     font-weight: 700;
                     font-size: 1.1rem;
                     padding: 0.5rem 1rem;
+
+
+                     /* Agregar efecto de boton presionado */
+                transition: transform 0,3s, box-shadow 0,3s;
+                &:hover{
+                    transform: scale(0.95);
+                    box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
+                    border-radius: 5px;
+
                 }
+                }
+
+
+
+                 /* boton iniciar sesion */
+
+                .linkNav.iniciarSesion{
+                background-color: #181419;
+                color: white;
+                border-radius: 5px;
+
+
+                    &:hover{
+                    background-color: #9f3647;
+                    transform: scale(0,95);
+                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+                    }
+            }
             }
         }
     }
 
 }
 
+/*ESTILOS PARA HEADER MOBILE Y TABLET */
+@media (max-width: 768px){
 
+    .header{
+        height: initial;
+
+        .navegacion{
+            margin-left: 10px;
+            margin-right: 10px;
+            flex-direction: column;
+            row-gap: 20px;
+
+            .anclaLogo{
+                font-weight: 700;
+                font-size: 1,2rem;
+            }
+
+            .listaNav{
+                padding:initial;
+
+                .listaItem{
+                    .linkNav{
+                        font-weight: 400;
+                        font-size: 1rem;
+                        margin-right: initial;
+                        padding:0,2rem;
+                    }
+                }
+            }
+        }
+    }
+}
 .main{
     /* BUSCADOR PRINCIPAL */
     .buscadorPrincipal{
@@ -102,11 +161,19 @@ body{
 
                 transition: transform 0.3s, box-shadow 0.3s;
 
+                /* Agregar efecto de boton presionado */
+                transition: transform 0,3s, box-shadow 0,3s;
                 &:hover{
                     transform: scale(0.95);
                     box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
+                    border-radius: 5px;
+
                 }
             }
+
+           
+
+
         }
     }
 }
