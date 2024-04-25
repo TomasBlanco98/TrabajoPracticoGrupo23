@@ -48,20 +48,17 @@ body{
                     font-size: 1.1rem;
                     padding: 0.5rem 1rem;
 
-
-                     /* Agregar efecto de boton presionado */
+                    /* Agregar efecto de boton presionado */
                     transition: transform 0,3s, box-shadow 0,3s;
-                    &:hover{
-                        transform: scale(0.95);
-                        box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
-                        border-radius: 5px;
 
+                    &:hover{
+                    transform: scale(0.95);
+                    box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
+                    border-radius: 5px;
                     }
                 }
 
-
-
-                 /* boton iniciar sesion */
+                /* boton iniciar sesion */
 
                 .linkNav.iniciarSesion{
                     background-color: #181419;
@@ -69,16 +66,14 @@ body{
                     border-radius: 5px;
 
                     &:hover{
-                    background-color: #9f3647;
-                    transform: scale(0,95);
-                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-
+                        background-color: #9f3647;
+                        transform: scale(0,95);
+                        box-shadow: 0 0 10px rgba(0,0,0,0.3);
                     }
                 }
             }
         }
     }
-
 }
 
 /*ESTILOS PARA HEADER MOBILE Y TABLET */
@@ -113,10 +108,48 @@ body{
         }
     }
 }
-
-/* ESTILOS DEL MAIN ESCRITORIO */
-
 .main{
+    .sectionPrincipal{
+        color: white;
+        background: linear-gradient(to right top, #0000008a, #0000008a), url(../img/banner-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .tituloPrincipal{
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .subtituloPrincipal{
+            font-size: 2.2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .botonRegistrarse{
+            background-color: #9f3647;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+
+            transition: transform 0.3s, box-shadow 0.3s;
+
+            &:hover{
+                transform: scale(0.95);
+                box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
+            }
+        }
+    }
     /* BUSCADOR PRINCIPAL */
     .buscadorPrincipal{
         height: 50vh;
