@@ -10,6 +10,51 @@ body{
     color: whitesmoke;
 }
 
+.header{
+    background-color: rgb(243, 242, 240);
+    color: rgb(10, 10, 10);
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px;
+        margin-left: 40px;
+        padding: 1.5rem 0;
+
+        .anclaLogo{
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem 0;
+        }
+
+        .listaNav{
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            .listaItem{
+                margin-right: 20px;
+
+                .linkNav{
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+
+}
+
+
 .main{
     /* BUSCADOR PRINCIPAL */
     .buscadorPrincipal{
