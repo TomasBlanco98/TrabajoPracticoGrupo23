@@ -1,16 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
 
-body{
+body {
     background-color: #181419;
     color: whitesmoke;
 }
- /* ESTILOS DEL HEADER ESCRITORIO */
-.header{
+
+/* ESTILOS DEL HEADER ESCRITORIO */
+.header {
     background-color: rgb(255, 28, 77);
     color: white;
     height: 10vh;
@@ -18,7 +19,7 @@ body{
     top: 0;
     z-index: 10;
 
-    .navegacion{
+    .navegacion {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -26,22 +27,22 @@ body{
         margin-left: 40px;
         padding: 1.5rem 0;
 
-        .anclaLogo{
+        .anclaLogo {
             text-decoration: none;
             color: white;
             font-weight: 700;
             font-size: 1.2rem 0;
         }
 
-        .listaNav{
+        .listaNav {
             list-style: none;
             display: flex;
             align-items: center;
 
-            .listaItem{
+            .listaItem {
                 margin-right: 20px;
 
-                .linkNav{
+                .linkNav {
                     color: white;
                     text-decoration: none;
                     font-weight: 700;
@@ -49,26 +50,26 @@ body{
                     padding: 0.5rem 1rem;
 
                     /* Agregar efecto de boton presionado */
-                    transition: transform 0,3s, box-shadow 0,3s;
+                    transition: transform 0, 3s, box-shadow 0, 3s;
 
-                    &:hover{
-                    transform: scale(0.95);
-                    box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
-                    border-radius: 5px;
+                    &:hover {
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
+                        border-radius: 5px;
                     }
                 }
 
                 /* boton iniciar sesion */
 
-                .linkNav.iniciarSesion{
+                .linkNav.iniciarSesion {
                     background-color: #181419;
                     color: white;
                     border-radius: 5px;
 
-                    &:hover{
+                    &:hover {
                         background-color: #9f3647;
-                        transform: scale(0,95);
-                        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                        transform: scale(0, 95);
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                     }
                 }
             }
@@ -77,39 +78,40 @@ body{
 }
 
 /*ESTILOS PARA HEADER MOBILE Y TABLET */
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .header{
+    .header {
         height: initial;
 
-        .navegacion{
+        .navegacion {
             margin-left: 10px;
             margin-right: 10px;
             flex-direction: column;
             row-gap: 20px;
 
-            .anclaLogo{
+            .anclaLogo {
                 font-weight: 700;
-                font-size: 1,2rem;
+                font-size: 1, 2rem;
             }
 
-            .listaNav{
-                padding:initial;
+            .listaNav {
+                padding: initial;
 
-                .listaItem{
-                    .linkNav{
+                .listaItem {
+                    .linkNav {
                         font-weight: 400;
                         font-size: 1rem;
                         margin-right: initial;
-                        padding:0,2rem;
+                        padding: 0, 2rem;
                     }
                 }
             }
         }
     }
 }
-.main{
-    .sectionPrincipal{
+
+.main {
+    .sectionPrincipal {
         color: white;
         background: linear-gradient(to right top, #0000008a, #0000008a), url(../img/banner-bg.jpg);
         background-size: cover;
@@ -121,19 +123,19 @@ body{
         align-items: center;
         text-align: center;
 
-        .tituloPrincipal{
+        .tituloPrincipal {
             font-size: 4rem;
             font-weight: 700;
             margin-bottom: 1rem;
         }
 
-        .subtituloPrincipal{
+        .subtituloPrincipal {
             font-size: 2.2rem;
             font-weight: 400;
             margin-bottom: 1rem;
         }
 
-        .botonRegistrarse{
+        .botonRegistrarse {
             background-color: #9f3647;
             color: #ffffff;
             padding: 1rem 2rem;
@@ -144,33 +146,34 @@ body{
 
             transition: transform 0.3s, box-shadow 0.3s;
 
-            &:hover{
+            &:hover {
                 transform: scale(0.95);
                 box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
             }
         }
     }
+
     /* BUSCADOR PRINCIPAL */
-    .buscadorPrincipal{
+    .buscadorPrincipal {
         height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .tituloBuscador{
+        .tituloBuscador {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
         }
 
-        .buscadorPeliculas{
+        .buscadorPeliculas {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-top: 0.5rem;
 
-            .inputBuscador{
+            .inputBuscador {
                 height: 50px;
                 width: 500px;
                 margin: 20px 10px;
@@ -181,7 +184,7 @@ body{
                 outline: none;
             }
 
-            .botonBuscador{
+            .botonBuscador {
                 background-color: #9f3647;
                 color: whitesmoke;
                 display: inline-block;
@@ -197,7 +200,7 @@ body{
                 transition: transform 0.3s, box-shadow 0.3s;
 
                 /* Agregar efecto de boton presionado */
-                &:hover{
+                &:hover {
                     transform: scale(0.95);
                     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
                     border-radius: 60px;
@@ -205,39 +208,46 @@ body{
             }
         }
     }
+
     /* SECCION TENDENCIAS */
-    .peliculasTendencia{
+    .peliculasTendencia {
         width: 80%;
         margin: 0 auto;
         text-align: center;
         margin-top: 10px;
-        .tituloTendencias{
+
+        .tituloTendencias {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 40px;
         }
-        .peliculas{
+
+        .peliculas {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 60px;
-            a{
+
+            a {
                 text-decoration: none;
                 color: whitesmoke;
-                .pelicula{
+
+                .pelicula {
                     width: 200px;
                     height: 300px;
                     position: relative;
                     overflow: hidden;
                     border-radius: 20px;
                     transition: all 0.5s;
-                    .imgTendencia{
+
+                    .imgTendencia {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                         border-radius: 20px;
                     }
-                    .tituloPelicula{
+
+                    .tituloPelicula {
                         z-index: 2;
                         position: absolute;
                         text-align: center;
@@ -245,37 +255,43 @@ body{
                         left: 50%;
                         width: 100%;
                         transform: translateY(-50%) translateX(-50%);
-                        h4{
+
+                        h4 {
                             opacity: 0;
                             font-size: 2rem;
                             letter-spacing: 0.2rem;
                             transition: opacity 0.4s ease-in-out;
                         }
                     }
-                    &:hover{
+
+                    &:hover {
                         box-shadow: 0 0 30px #9f3648cd;
                         transform: scale(0.9);
                     }
-                    &:hover .tituloPelicula{
+
+                    &:hover .tituloPelicula {
                         height: 100%;
                         backdrop-filter: blur(10px);
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
-                    &:hover h4{
+
+                    &:hover h4 {
                         opacity: 1;
                     }
                 }
             }
         }
-        .botones{
+
+        .botones {
             display: flex;
             justify-content: space-evenly;
             margin-top: 2rem;
             margin-bottom: 2rem;
         }
-        .boton{
+
+        .boton {
             border: 1px solid white;
             background-color: #9f3647;
             color: whitesmoke;
@@ -283,9 +299,10 @@ body{
             border-radius: 8px;
             box-sizing: content-box;
             font-size: 1rem;
-            
+
             transition: transform 0.3s, box-shadow 0.3s;
-            &:hover{
+
+            &:hover {
                 transform: scale(0.95);
                 box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
             }
@@ -295,52 +312,133 @@ body{
 
 /* ESTILOS DEL MAIN MOBILE Y TABLET */
 
-@media (max-width: 768px){
-    .main{
+@media (max-width: 768px) {
+    .main {
+
         /* BUSCADOR PRINCIPAL */
-        .buscadorPrincipal{
+        .buscadorPrincipal {
             height: 50vh;
-            .tituloBuscador{
+
+            .tituloBuscador {
                 font-size: 1.8rem;
             }
-            .buscadorPeliculas{
-                .inputBuscador{
+
+            .buscadorPeliculas {
+                .inputBuscador {
                     font-size: 1rem;
                     height: 40px;
                     width: 300px;
                 }
-                .botonBuscador{
+
+                .botonBuscador {
                     height: 40px;
                     padding: 0 15px;
                     font-size: 1rem;
                 }
             }
         }
+
         /* SECCION TENDENCIAS */
-        .peliculasTendencia{
+        .peliculasTendencia {
             width: 95%;
-            .tituloTendencias{
+
+            .tituloTendencias {
                 font-size: 1.8rem;
             }
-            .peliculas{
+
+            .peliculas {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                a{
-                    .pelicula{
+
+                a {
+                    .pelicula {
                         height: 500px;
                         width: 100%;
-                        .tituloPelicula{
-                            h4{
+
+                        .tituloPelicula {
+                            h4 {
                                 font-size: 1.2rem;
                             }
                         }
                     }
                 }
             }
-            .boton{
+
+            .boton {
                 padding: 0.7rem 0.7rem;
                 font: 0.7rem;
+            }
+        }
+    }
+
+}
+
+.footer {
+    background-color: #9f3647;
+    color: #ffffff;
+    bottom: 0;
+    z-index: 10;
+
+    .navegacion {
+        display: flex;
+        align-items: center;
+        margin-left: 20%;
+        margin-right: 10%;
+        padding: 1.5rem 0;
+
+        .listaFooter {
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            .listaItem {
+                margin-right: 20%;
+                justify-content: space-between;
+
+                .linkNavfooter {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 1.25rem;
+                    padding: 1.5 1rem;
+                }
+            }
+        }
+    }
+
+    .flechaArriba {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+/*ESTILOS PARA FOOTER MOBILE Y TABLET */
+@media (max-width: 768px) {
+    .footer {
+        height: initial;
+
+        .navegacion {
+            margin-left: 10px;
+            margin-right: 10px;
+            justify-content: center;
+
+            .listaFooter {
+                padding: initial;
+                flex-direction: column;
+                row-gap: 5px;
+
+                .listaItem {
+
+                    .linkNavfooter {
+                        font-weight: 600;
+                        font-size: 1rem;
+                        margin-right: initial;
+                    }
+                }
             }
         }
     }
