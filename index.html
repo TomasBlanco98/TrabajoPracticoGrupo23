@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- link de CSS -->
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Document</title>
+    <title>CAC-MOVIES</title>
 </head>
 
 <body>
@@ -25,9 +25,9 @@
                 <span>G23-Movies</span>
             </a>
             <ul class="listaNav">
-                <li class="listaItem"><a href="#" class="linkNav">Tendencias</a></li>
+                <li class="listaItem"><a href="#tendencias" class="linkNav">Tendencias</a></li>
                 <li class="listaItem"><a href="#" class="linkNav">Registrarse</a></li>
-                <li class="listaItem"><a href="#" class="linkNav iniciarSesion">Iniciar Sesión</a></li>
+                <li class="listaItem"><a href="form.html" class="linkNav iniciarSesion">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
@@ -48,7 +48,7 @@
         </section>
         <!-- TENDENCIAS -->
         <section class="peliculasTendencia">
-            <h3 class="tituloTendencias">Tendencias de hoy</h3>
+            <h3 id="tendencias" class="tituloTendencias">Tendencias de hoy</h3>
             <div class="peliculas">
                 <a href="#">
                     <div class="pelicula">
@@ -61,7 +61,7 @@
 
                 <a href="#">
                     <div class="pelicula">
-                        <img class="imgTendencia" src="img/peli_2.jpg" alt="The Beekeeper">
+                        <img class="imgTendencia" src="img/peli_2.jpg" alt="Badland Hunters">
                         <div class="tituloPelicula">
                             <h4>Badland Hunters</h4>
                         </div>
@@ -70,7 +70,7 @@
 
                 <a href="#">
                     <div class="pelicula">
-                        <img class="imgTendencia" src="img/peli_3.jpg" alt="The Beekeeper">
+                        <img class="imgTendencia" src="img/peli_3.jpg" alt="The Marvels">
                         <div class="tituloPelicula">
                             <h4>The Marvels</h4>
                         </div>
@@ -79,7 +79,7 @@
 
                 <a href="#">
                     <div class="pelicula">
-                        <img class="imgTendencia" src="img/peli_4.jpg" alt="The Beekeeper">
+                        <img class="imgTendencia" src="img/peli_4.jpg" alt="Wonka">
                         <div class="tituloPelicula">
                             <h4>Wonka</h4>
                         </div>
@@ -88,7 +88,7 @@
 
                 <a href="#">
                     <div class="pelicula">
-                        <img class="imgTendencia" src="img/peli_5.jpg" alt="The Beekeeper">
+                        <img class="imgTendencia" src="img/peli_5.jpg" alt="Aquaman and the Lost Kingdom">
                         <div class="tituloPelicula">
                             <h4>Aquaman and the Lost Kingdom</h4>
                         </div>
@@ -97,7 +97,7 @@
 
                 <a href="#">
                     <div class="pelicula">
-                        <img class="imgTendencia" src="img/peli_6.jpg" alt="The Beekeeper">
+                        <img class="imgTendencia" src="img/peli_6.jpg" alt="Migration">
                         <div class="tituloPelicula">
                             <h4>Migration</h4>
                         </div>
@@ -106,7 +106,7 @@
 
                 <a href="#">
                     <div class="pelicula">
-                        <img class="imgTendencia" src="img/peli_7.jpg" alt="The Beekeeper">
+                        <img class="imgTendencia" src="img/peli_7.jpg" alt="Sixty Minutes">
                         <div class="tituloPelicula">
                             <h4>Sixty Minutes</h4>
                         </div>
@@ -115,7 +115,7 @@
 
                 <a href="#">
                     <div class="pelicula">
-                        <img class="imgTendencia" src="img/peli_8.jpg" alt="The Beekeeper">
+                        <img class="imgTendencia" src="img/peli_8.jpg" alt="Wish">
                         <div class="tituloPelicula">
                             <h4>Wish</h4>
                         </div>
@@ -124,7 +124,7 @@
 
                 <a href="#">
                     <div class="pelicula">
-                        <img class="imgTendencia" src="img/peli_9.jpg" alt="The Beekeeper">
+                        <img class="imgTendencia" src="img/peli_9.jpg" alt="The Masked Saint">
                         <div class="tituloPelicula">
                             <h4>The Masked Saint</h4>
                         </div>
@@ -133,7 +133,7 @@
 
                 <a href="#">
                     <div class="pelicula">
-                        <img class="imgTendencia" src="img/peli_10.jpg" alt="The Beekeeper">
+                        <img class="imgTendencia" src="img/peli_10.jpg" alt="Due Justice">
                         <div class="tituloPelicula">
                             <h4>Due Justice</h4>
                         </div>
@@ -142,7 +142,7 @@
 
                 <a href="#">
                     <div class="pelicula">
-                        <img class="imgTendencia" src="img/peli_11.jpg" alt="The Beekeeper">
+                        <img class="imgTendencia" src="img/peli_11.jpg" alt="Orion and the Dark">
                         <div class="tituloPelicula">
                             <h4>Orion and the Dark</h4>
                         </div>
@@ -151,7 +151,7 @@
 
                 <a href="#">
                     <div class="pelicula">
-                        <img class="imgTendencia" src="img/peli_12.jpg" alt="The Beekeeper">
+                        <img class="imgTendencia" src="img/peli_12.jpg" alt="Genghis Khan">
                         <div class="tituloPelicula">
                             <h4>Genghis Khan</h4>
                         </div>
@@ -161,6 +161,48 @@
             <div class="botones">
                 <button class="boton anterior">Anterior</button>
                 <button class="boton siguiente">Siguiente</button>
+            </div>
+        </section>
+        <!-- ACLAMADAS -->
+        <section class="peliculasAclamadas">
+            <h3 class="tituloAclamadas">Las más aclamadas</h3>
+            <div class="aclamadas">
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_1.jpg" alt="aclamada_1">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_2.jpg" alt="aclamada_1">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_3.jpg" alt="aclamada_1">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_4.jpg" alt="aclamada_1">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_5.jpg" alt="aclamada_1">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_6.jpg" alt="aclamada_1">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_7.jpg" alt="aclamada_1">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_8.jpg" alt="aclamada_1">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_9.jpg" alt="aclamada_1">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_10.jpg" alt="aclamada_1">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_11.jpg" alt="aclamada_1">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./img/aclamada_12.jpg" alt="aclamada_1">
+                </div>
             </div>
         </section>
     </main>

@@ -5,6 +5,25 @@
     font-family: 'Lato', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(23, 23, 23);
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9f3647;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:#9f3647;
+}
+
 body {
     background-color: #181419;
     color: whitesmoke;
@@ -109,7 +128,7 @@ body {
         }
     }
 }
-
+/* ESTILOS DEL MAIN ESCRITORIO */
 .main {
     .sectionPrincipal {
         color: white;
@@ -287,7 +306,7 @@ body {
         .botones {
             display: flex;
             justify-content: space-evenly;
-            margin-top: 2rem;
+            margin-top: 4rem;
             margin-bottom: 2rem;
         }
 
@@ -305,6 +324,44 @@ body {
             &:hover {
                 transform: scale(0.95);
                 box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+    /* SECCION ACLAMADAS */
+    .peliculasAclamadas{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        .tituloAclamadas{
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        .aclamadas{
+            overflow-x: scroll;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-bottom: 40px;
+            .peliculaItem{
+                border-radius: 20px;
+                width: 170px;
+                min-width: 170px;
+                font-size: 20px;
+                margin-left: 20px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .imgAclamada{
+                    border-radius: 5%;
+                    width: 95%;
+                    height: 95%;
+                    object-fit: cover;
+                }
             }
         }
     }
@@ -370,6 +427,22 @@ body {
                 font: 0.7rem;
             }
         }
+        .peliculasAclamadas{
+            .tituloAclamadas{
+                font-size: 1.8rem;
+            }
+            .aclamadas{
+                .peliculaItem{
+                    width: 150px;
+                    min-width: 150px;
+                    font-size: 15px;
+                    .imgAclamada{
+                        width: 90%;
+                        height: 90%;
+                    }
+                }
+            }
+        }
     }
 
 }
@@ -416,7 +489,7 @@ body {
     }
 }
 
-/*ESTILOS PARA FOOTER MOBILE Y TABLET */
+/* ESTILOS PARA FOOTER MOBILE Y TABLET */
 @media (max-width: 768px) {
     .footer {
         height: initial;
@@ -439,6 +512,155 @@ body {
                         margin-right: initial;
                     }
                 }
+            }
+        }
+    }
+}
+
+/* ESTILOS ESCRITORIO FORM LOGIN */
+.bodyRegistrarse{
+    height: 100vh;
+    background:linear-gradient(to right top, #24242473,#24242473),url("../img/bg-register.jpg");
+    background-size: cover;
+    background-position: center;
+    .headerRegistrarse{
+        color:#ffffff;
+        height: 8vh;
+        padding:30px;
+        .anclaLogo{
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.2rem;
+             /*animacion hover*/
+            &:hover{
+                animation: tilt-n-move-shaking 0.25s infinite;
+            }
+        }
+    }
+    .main{
+         /*seccion de registrarse.html*/
+        .seccionRegistrarse{
+            background-color:rgb(42, 42, 42);
+            width: 30%;
+            margin:0 auto;
+            border-radius: 5px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            font-size:1.2rem;
+            .tituloRegistrarse{
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            /*seleccionar todos los input menos el checkbox*/
+            form{
+                width: 100%;
+                padding:40px;
+                input:not(.check,.boton),select{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    height: 40px;
+                    padding: 0px 20px;
+                    font-size: 1.2rem;
+                    border-radius: 20px;
+                    border: 2px solid #9f3647;
+                    background-color: #333333;
+                    outline: none;
+                    color:rgb(255, 255, 255);
+                }
+                .error input:not(.check,.boton),.error select{
+                    border: 3px solid #ff0000;
+                }
+                .error-text{
+                    color: #ff0000;
+                    font-size: 0.8rem;
+                    margin-top:0px;
+                    margin-bottom: 10px;
+                }
+              
+                .terminos{
+                    font-size: 0.8rem;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .textoCheck{
+                        margin-left: 10px;
+                    }
+                }
+                .boton{
+                    width: 87%;
+                    box-sizing: content-box;
+                    background-color:#9f3647;
+                    border: 2px solid #9f3647;
+                    color: #ffffff;
+                    padding: 1rem 1rem;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                   
+                }
+                .ayuda{
+                    margin-top:40px;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    color: #787878;
+                    font-weight:400;
+                   
+                }
+            }
+        }
+    }
+}
+
+
+
+/* ESTILOS PARA MOBILE Y TABLE FORM LOGIN */
+@media (max-width: 1200px) {
+    .bodyRegistrarse{
+        .headerRegistrarse{
+            padding:20px;
+            .anclaLogo{
+                font-size: 1rem;
+            }
+        }
+        .main{
+            .seccionRegistrarse{
+                width: 95%;
+                padding: 10px 10px;
+                .tituloRegistrarse{
+                    font-size: 2rem;
+                }
+                form{
+                    width: 100%;
+                    text-align: center;
+               
+                    input:not(.check,.boton),select{
+                        width: 80%;
+                        height: 35px;
+                        font-size: 1rem;
+                    }
+                    .terminos{
+                        width: 80%;
+                        margin:0 auto;
+                        font-size: 0.7rem;
+                    }
+                    .boton{
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        width: 70%;
+                        padding: 0.8rem 0.8rem;
+                        font-size: 0.8rem;
+                    }
+                    .ayuda{
+                        text-align: left;
+                        font-size: 0.8rem;
+                    }
+                }          
             }
         }
     }
