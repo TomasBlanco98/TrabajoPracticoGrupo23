@@ -519,7 +519,7 @@ body {
     }
 }
 
-/* ESTILOS DEL ESCRITORIO FORM LOGIN */
+/* ESTILOS DEL ESCRITORIO FORM LOGIN Y REGISTER */
 .bodyRegistrarse{
     height: 100vh;
     background:linear-gradient(to right top, #24242473,#24242473),url("../img/bg-register.jpg");

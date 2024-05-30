@@ -75,8 +75,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         validar = validarCampo('birthday', 'necesitamos su fecha de nacimiento') && validar;
 
-        validar = validarCampo('celNumb', 'necesitamos su numero de celular') && validar;
-
         validar = validarCampo('country', 'el pais es obligatorio') && validar;
 
         return validar;
