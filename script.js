@@ -103,7 +103,7 @@ function llamarAPI(page){
 
 function Pelicula(obj){
     return `
-    <a href="#">
+    <a href="pages/detalle.html">
         <div class="pelicula">
             <img class="imgTendencia" src="https://image.tmdb.org/t/p/w500/${obj.poster_path}" alt="${obj.title}">
             <div class="tituloPelicula">

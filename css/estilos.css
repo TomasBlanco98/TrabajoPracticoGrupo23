@@ -96,7 +96,7 @@ body {
     }
 }
 
-/*ESTILOS PARA HEADER MOBILE Y TABLET */
+/*ESTILOS DEL HEADER MOBILE Y TABLET */
 @media (max-width: 768px) {
 
     .header {
@@ -427,6 +427,7 @@ body {
                 font: 0.7rem;
             }
         }
+        /* SECCION ACLAMADAS */
         .peliculasAclamadas{
             .tituloAclamadas{
                 font-size: 1.8rem;
@@ -447,6 +448,7 @@ body {
 
 }
 
+/* ESTILOS DEL FOOTER ESCRITORIO */
 .footer {
     background-color: #9f3647;
     color: #ffffff;
@@ -489,7 +491,7 @@ body {
     }
 }
 
-/* ESTILOS PARA FOOTER MOBILE Y TABLET */
+/* ESTILOS DEL FOOTER MOBILE Y TABLET */
 @media (max-width: 768px) {
     .footer {
         height: initial;
@@ -517,7 +519,7 @@ body {
     }
 }
 
-/* ESTILOS ESCRITORIO FORM LOGIN */
+/* ESTILOS DEL ESCRITORIO FORM LOGIN */
 .bodyRegistrarse{
     height: 100vh;
     background:linear-gradient(to right top, #24242473,#24242473),url("../img/bg-register.jpg");
@@ -619,7 +621,7 @@ body {
 
 
 
-/* ESTILOS PARA MOBILE Y TABLE FORM LOGIN */
+/* ESTILOS DEL MOBILE Y TABLET FORM LOGIN */
 @media (max-width: 1200px) {
     .bodyRegistrarse{
         .headerRegistrarse{
@@ -661,6 +663,153 @@ body {
                         font-size: 0.8rem;
                     }
                 }          
+            }
+        }
+    }
+}
+
+/* ESTILOS DEL ESCRITORIO DETALLE MARIO */
+.mainDetalle{
+    .detalle{
+        padding-top: 50px;
+        background:linear-gradient(to right top, #6d6969a7, #6d6969a7),url("../img/mario-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        .contenedorDetalle{
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 40px;
+            img{
+                border-radius: 20px;
+            }
+            .textoDetalle{
+                h1{
+                    font-size: 2.2rem;
+                    font-weight: 700;
+                }
+                h2{
+                    margin-top: 20px;
+                }
+                .contenedorCreditos{
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    .trailer{
+        padding-top: 150px;
+        padding-bottom: 100px;
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 70px;
+        .contenedorInfo{
+            .redes{
+                margin-bottom: 20px;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    column-gap: 20px;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: #FFFFFF;
+                            font-size: 2.3rem;
+                            margin-right: 50px;
+                        }
+                    }
+                }
+            }
+            .info{
+                table{
+                    width: 100%;
+                    tr{
+                        td{
+                            font-size: 1.2rem;
+                            padding: 10px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ESTILOS DEL MOBILE Y TABLET DETALLE MARIO */
+@media (max-width: 1200px){
+    .mainDetalle{
+        .detalle{
+            height: initial;
+            .contenedorDetalle{
+                flex-direction: column;
+                row-gap: 15px;
+                img{
+                    width: 100%;
+                    height: 300px;
+                }
+                .textoDetalle{
+                    h1{
+                        font-size: 1.5rem;
+                    }
+                    h2{
+                        font-size: 1rem;
+                    }
+                    .contenedorCreditos{
+                        flex-direction: column;
+                        row-gap: 10px;
+                    }
+                }
+            }
+        }
+        .trailer{
+            width: 95%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            flex-direction: column;
+            row-gap: 20px;
+            .contenedorTrailer{
+                width: 100%;
+                h2{
+                    margin-bottom: 20px;
+                }
+                iframe{
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+            .contenedorInfo{
+                width: 100%;
+                .redes{
+                    width: 100%;
+                    ul{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        li{
+                            a{
+                                font-size: 2rem;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+                .info{
+                    table{
+                        tr{
+                            td{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
