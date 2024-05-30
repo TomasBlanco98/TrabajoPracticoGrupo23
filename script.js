@@ -69,6 +69,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         validar = validarCampo('password', 'La contraseña es obligatoria') && validar;
 
+        validar = validarCampo('name', 'necesitamos al menos un nombre') && validar;
+
+        validar = validarCampo('surname', 'necesitamos al menos un apellido') && validar;
+
+        validar = validarCampo('birthday', 'necesitamos su fecha de nacimiento') && validar;
+
+        validar = validarCampo('celNumb', 'necesitamos su numero de celular') && validar;
+
+        validar = validarCampo('country', 'el pais es obligatorio') && validar;
+
         return validar;
     }
 
@@ -136,3 +146,5 @@ document.querySelector('.anterior').addEventListener('click', cargarPaginaAnteri
 document.querySelector('.siguiente').addEventListener('click', cargarPaginaSiguiente);
 
 llamarAPI(currentPage);
+
+
